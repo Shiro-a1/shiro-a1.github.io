@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Shiro-aI</title>
+    <link>https://shiro-a1.github.io/tags/hugo/</link>
+    <description>Recent content in Hugo on Shiro-aI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 24 May 2023 17:26:07 +0900</lastBuildDate><atom:link href="https://shiro-a1.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>このホームページの作り方とか</title>
+      <link>https://shiro-a1.github.io/post/hp-create/</link>
+      <pubDate>Wed, 24 May 2023 17:26:07 +0900</pubDate>
+      
+      <guid>https://shiro-a1.github.io/post/hp-create/</guid>
+      <description>&lt;p&gt;最初の記事にもちょっと書きましたがHugoを使って作成しました。&lt;br&gt;
+まず、ちなみになんでHugoにしたのかというところ話していきます。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

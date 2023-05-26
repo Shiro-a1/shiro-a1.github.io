@@ -5,7 +5,7 @@
     <link>https://shiro-a1.github.io/tags/%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B/</link>
     <description>Recent content in お知らせ on Shiro-aI</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ja-ja</language>
+    <language>ja</language>
     <lastBuildDate>Wed, 24 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://shiro-a1.github.io/tags/%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Webサイトを作りました！</title>
@@ -13,7 +13,8 @@
       <pubDate>Wed, 24 May 2023 00:00:00 +0000</pubDate>
       
       <guid>https://shiro-a1.github.io/post/init-post/</guid>
-      <description>ホームページがほしいと思ったのと色々練習したいと思って作りました。</description>
+      <description>&lt;p&gt;ホームページがほしいと思ったのと色々練習したいと思って作りました。&lt;br&gt;
+今までサーバー用意するのが大変だからやってなかったのですけど、GitHub Pages使えば無料でサイトを公開できる！って知って試してみました。&lt;/p&gt;</description>
     </item>
     
   </channel>

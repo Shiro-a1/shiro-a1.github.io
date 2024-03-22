@@ -16,7 +16,7 @@
     
   },
   "name":"Shiro-aI",
-  "description":"会社でC#使うのでC#の勉強を少ししていました。 私は元々Qt C\u002b\u002bがメインだったのでC\u002b\u002bとの違いを主題として書いていきます。 まあ他人向けというより自分への防備録としてですけど。\nC\u002b\u002bとの違い *Hello world! いつものやつです C\u002b\u002bだとcout \u0026lt;\u0026lt; \u0026quot;Hello world!\u0026quot; \u0026lt;\u0026lt; endl;とかprintf(\u0026quot;Hello world!\\n\u0026quot;);ですね。 これがC#だとConsole.WriteLine(\u0026ldquo;Hello world!\u0026rdquo;);になるっぽいですね。 まあでもこれ実際のプログラミングで使う機会ってそんなにあるんですかね？\n大きな変化で驚いたのは配列の宣言とヘッダーファイルが無いことですよね。 配列の宣言の[]の位置が違うので違和感がすごいですね C\u002b\u002bだとCと同じで int array[3] = {1, 2, 3};　\/\/とか int array[3];\t\/\/ですよね 一方C#だと int[] array = {1, 2, 3};\t\/\/あるいは int[] array = new int[3];\t\/\/です そしてヘッダーファイルに関してはC\u002b\u002bだと.hに宣言して.cssに実装を書くってやり方でしたが　.hとかはなくその場で記述しないといけないみたいです。\nあとmain関数が謎のクラスに入ってるのもよくわからないんですよね。 サンプルとか見てても全部何かしらクラスに入ってますよね。そういうもんなんでしょうけど何故なのか分かってません。\n細かく書くと無限に増えそうなので大きな違いをすぐ思いつくのだけ書きましたが、取り敢えずここらへんです。 また思い出したり、何か出てきたら追加していきます。\nそれでは。",
+  "description":"\u003cp\u003e会社でC#使うのでC#の勉強を少ししていました。\n私は元々Qt C\u002b\u002bがメインだったのでC\u002b\u002bとの違いを主題として書いていきます。\nまあ他人向けというより自分への防備録としてですけど。\u003c\/p\u003e",
   "url":"https:\/\/shiro-a1.github.io\/post\/20230322cs-learning1\/",
   "keywords":"[tech]"
 }
@@ -28,38 +28,26 @@
 <meta name="generator" content="Hugo 0.111.3 with theme Tranquilpeak 0.5.3-BETA">
 <meta name="author" content="ShiroI">
 <meta name="keywords" content="tech">
-<meta name="description" content="会社でC#使うのでC#の勉強を少ししていました。 私は元々Qt C&#43;&#43;がメインだったのでC&#43;&#43;との違いを主題として書いていきます。 まあ他人向けというより自分への防備録としてですけど。
-C&#43;&#43;との違い *Hello world! いつものやつです C&#43;&#43;だとcout &lt;&lt; &quot;Hello world!&quot; &lt;&lt; endl;とかprintf(&quot;Hello world!\n&quot;);ですね。 これがC#だとConsole.WriteLine(&ldquo;Hello world!&rdquo;);になるっぽいですね。 まあでもこれ実際のプログラミングで使う機会ってそんなにあるんですかね？
-大きな変化で驚いたのは配列の宣言とヘッダーファイルが無いことですよね。 配列の宣言の[]の位置が違うので違和感がすごいですね C&#43;&#43;だとCと同じで int array[3] = {1, 2, 3};　//とか int array[3];	//ですよね 一方C#だと int[] array = {1, 2, 3};	//あるいは int[] array = new int[3];	//です そしてヘッダーファイルに関してはC&#43;&#43;だと.hに宣言して.cssに実装を書くってやり方でしたが　.hとかはなくその場で記述しないといけないみたいです。
-あとmain関数が謎のクラスに入ってるのもよくわからないんですよね。 サンプルとか見てても全部何かしらクラスに入ってますよね。そういうもんなんでしょうけど何故なのか分かってません。
-細かく書くと無限に増えそうなので大きな違いをすぐ思いつくのだけ書きましたが、取り敢えずここらへんです。 また思い出したり、何か出てきたら追加していきます。
-それでは。">
+<meta name="description" content="会社でC#使うのでC#の勉強を少ししていました。
+私は元々Qt C&#43;&#43;がメインだったのでC&#43;&#43;との違いを主題として書いていきます。
+まあ他人向けというより自分への防備録としてですけど。">
 
 
-<meta property="og:description" content="会社でC#使うのでC#の勉強を少ししていました。 私は元々Qt C&#43;&#43;がメインだったのでC&#43;&#43;との違いを主題として書いていきます。 まあ他人向けというより自分への防備録としてですけど。
-C&#43;&#43;との違い *Hello world! いつものやつです C&#43;&#43;だとcout &lt;&lt; &quot;Hello world!&quot; &lt;&lt; endl;とかprintf(&quot;Hello world!\n&quot;);ですね。 これがC#だとConsole.WriteLine(&ldquo;Hello world!&rdquo;);になるっぽいですね。 まあでもこれ実際のプログラミングで使う機会ってそんなにあるんですかね？
-大きな変化で驚いたのは配列の宣言とヘッダーファイルが無いことですよね。 配列の宣言の[]の位置が違うので違和感がすごいですね C&#43;&#43;だとCと同じで int array[3] = {1, 2, 3};　//とか int array[3];	//ですよね 一方C#だと int[] array = {1, 2, 3};	//あるいは int[] array = new int[3];	//です そしてヘッダーファイルに関してはC&#43;&#43;だと.hに宣言して.cssに実装を書くってやり方でしたが　.hとかはなくその場で記述しないといけないみたいです。
-あとmain関数が謎のクラスに入ってるのもよくわからないんですよね。 サンプルとか見てても全部何かしらクラスに入ってますよね。そういうもんなんでしょうけど何故なのか分かってません。
-細かく書くと無限に増えそうなので大きな違いをすぐ思いつくのだけ書きましたが、取り敢えずここらへんです。 また思い出したり、何か出てきたら追加していきます。
-それでは。">
+<meta property="og:description" content="会社でC#使うのでC#の勉強を少ししていました。
+私は元々Qt C&#43;&#43;がメインだったのでC&#43;&#43;との違いを主題として書いていきます。
+まあ他人向けというより自分への防備録としてですけど。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C#に関する勉強　第一回">
 <meta name="twitter:title" content="C#に関する勉強　第一回">
 <meta property="og:url" content="https://shiro-a1.github.io/post/20230322cs-learning1/">
 <meta property="twitter:url" content="https://shiro-a1.github.io/post/20230322cs-learning1/">
 <meta property="og:site_name" content="Shiro-aI">
-<meta property="og:description" content="会社でC#使うのでC#の勉強を少ししていました。 私は元々Qt C&#43;&#43;がメインだったのでC&#43;&#43;との違いを主題として書いていきます。 まあ他人向けというより自分への防備録としてですけど。
-C&#43;&#43;との違い *Hello world! いつものやつです C&#43;&#43;だとcout &lt;&lt; &quot;Hello world!&quot; &lt;&lt; endl;とかprintf(&quot;Hello world!\n&quot;);ですね。 これがC#だとConsole.WriteLine(&ldquo;Hello world!&rdquo;);になるっぽいですね。 まあでもこれ実際のプログラミングで使う機会ってそんなにあるんですかね？
-大きな変化で驚いたのは配列の宣言とヘッダーファイルが無いことですよね。 配列の宣言の[]の位置が違うので違和感がすごいですね C&#43;&#43;だとCと同じで int array[3] = {1, 2, 3};　//とか int array[3];	//ですよね 一方C#だと int[] array = {1, 2, 3};	//あるいは int[] array = new int[3];	//です そしてヘッダーファイルに関してはC&#43;&#43;だと.hに宣言して.cssに実装を書くってやり方でしたが　.hとかはなくその場で記述しないといけないみたいです。
-あとmain関数が謎のクラスに入ってるのもよくわからないんですよね。 サンプルとか見てても全部何かしらクラスに入ってますよね。そういうもんなんでしょうけど何故なのか分かってません。
-細かく書くと無限に増えそうなので大きな違いをすぐ思いつくのだけ書きましたが、取り敢えずここらへんです。 また思い出したり、何か出てきたら追加していきます。
-それでは。">
-<meta name="twitter:description" content="会社でC#使うのでC#の勉強を少ししていました。 私は元々Qt C&#43;&#43;がメインだったのでC&#43;&#43;との違いを主題として書いていきます。 まあ他人向けというより自分への防備録としてですけど。
-C&#43;&#43;との違い *Hello world! いつものやつです C&#43;&#43;だとcout &lt;&lt; &quot;Hello world!&quot; &lt;&lt; endl;とかprintf(&quot;Hello world!\n&quot;);ですね。 これがC#だとConsole.WriteLine(&ldquo;Hello world!&rdquo;);になるっぽいですね。 まあでもこれ実際のプログラミングで使う機会ってそんなにあるんですかね？
-大きな変化で驚いたのは配列の宣言とヘッダーファイルが無いことですよね。 配列の宣言の[]の位置が違うので違和感がすごいですね C&#43;&#43;だとCと同じで int array[3] = {1, 2, 3};　//とか int array[3];	//ですよね 一方C#だと int[] array = {1, 2, 3};	//あるいは int[] array = new int[3];	//です そしてヘッダーファイルに関してはC&#43;&#43;だと.hに宣言して.cssに実装を書くってやり方でしたが　.hとかはなくその場で記述しないといけないみたいです。
-あとmain関数が謎のクラスに入ってるのもよくわからないんですよね。 サンプルとか見てても全部何かしらクラスに入ってますよね。そういうもんなんでしょうけど何故なのか分かってません。
-細かく書くと無限に増えそうなので大きな違いをすぐ思いつくのだけ書きましたが、取り敢えずここらへんです。 また思い出したり、何か出てきたら追加していきます。
-それでは。">
+<meta property="og:description" content="会社でC#使うのでC#の勉強を少ししていました。
+私は元々Qt C&#43;&#43;がメインだったのでC&#43;&#43;との違いを主題として書いていきます。
+まあ他人向けというより自分への防備録としてですけど。">
+<meta name="twitter:description" content="会社でC#使うのでC#の勉強を少ししていました。
+私は元々Qt C&#43;&#43;がメインだったのでC&#43;&#43;との違いを主題として書いていきます。
+まあ他人向けというより自分への防備録としてですけど。">
 <meta property="og:locale" content="ja">
 
   
@@ -297,26 +285,27 @@ C&#43;&#43;との違い *Hello world! いつものやつです C&#43;&#43;だと
 私は元々Qt C++がメインだったのでC++との違いを主題として書いていきます。
 まあ他人向けというより自分への防備録としてですけど。</p>
 <h4 id="cとの違い">C++との違い</h4>
-<p>*Hello world!
-いつものやつです
-C++だと<code>cout &lt;&lt; &quot;Hello world!&quot; &lt;&lt; endl;</code>とか<code>printf(&quot;Hello world!\n&quot;);</code>ですね。
-これがC#だとConsole.WriteLine(&ldquo;Hello world!&rdquo;);になるっぽいですね。
-まあでもこれ実際のプログラミングで使う機会ってそんなにあるんですかね？</p>
-<p>大きな変化で驚いたのは配列の宣言とヘッダーファイルが無いことですよね。
-配列の宣言の[]の位置が違うので違和感がすごいですね
-C++だとCと同じで
-<code>int array[3] = {1, 2, 3};　	//とか</code>
-<code>int array[3];					//ですよね</code>
-一方C#だと
-<code>int[] array = {1, 2, 3};		//あるいは</code>
-<code>int[] array = new int[3];		//です</code>
+<ul>
+<li>Hello world!
+いつものやつです。<!-- raw HTML omitted -->
+C++だと<code>cout &lt;&lt; &quot;Hello world!&quot; &lt;&lt; endl;</code>とか<code>printf(&quot;Hello world!\n&quot;);</code>ですね。<!-- raw HTML omitted -->
+これがC#だとConsole.WriteLine(&ldquo;Hello world!&rdquo;);になるっぽいですね。<!-- raw HTML omitted -->
+まあでもこれ実際のプログラミングで使う機会ってそんなにあるんですかね？</li>
+</ul>
+<p>大きな変化で驚いたのは配列の宣言とヘッダーファイルが無いことですよね。<!-- raw HTML omitted -->
+配列の宣言の[]の位置が違うので違和感がすごいです。<!-- raw HTML omitted -->
+C++だとCと同じで<!-- raw HTML omitted -->
+<code>int array[3] = {1, 2, 3};　	//とか</code><!-- raw HTML omitted -->
+<code>int array[3];					//ですよね</code><!-- raw HTML omitted -->
+一方C#だと<!-- raw HTML omitted -->
+<code>int[] array = {1, 2, 3};		//あるいは</code><!-- raw HTML omitted -->
+<code>int[] array = new int[3];		//です</code><!-- raw HTML omitted -->
 そしてヘッダーファイルに関してはC++だと.hに宣言して.cssに実装を書くってやり方でしたが　.hとかはなくその場で記述しないといけないみたいです。</p>
-<p>あとmain関数が謎のクラスに入ってるのもよくわからないんですよね。
+<p>あとmain関数が謎のクラスに入ってるのもよくわからないんですよね。<!-- raw HTML omitted -->
 サンプルとか見てても全部何かしらクラスに入ってますよね。そういうもんなんでしょうけど何故なのか分かってません。</p>
-<p>細かく書くと無限に増えそうなので大きな違いをすぐ思いつくのだけ書きましたが、取り敢えずここらへんです。
+<p>細かく書くと無限に増えそうなので大きな違いをすぐ思いつくのだけ書きましたが、取り敢えずここらへんです。<!-- raw HTML omitted -->
 また思い出したり、何か出てきたら追加していきます。</p>
 <p>それでは。</p>
-
               
 
 

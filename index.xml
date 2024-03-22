@@ -6,7 +6,30 @@
     <description>Recent content on Shiro-aI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 24 May 2023 17:26:07 +0900</lastBuildDate><atom:link href="https://shiro-a1.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Mar 2024 14:43:47 +0900</lastBuildDate><atom:link href="https://shiro-a1.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>アフィカス</title>
+      <link>https://shiro-a1.github.io/post/affiliate/</link>
+      <pubDate>Fri, 22 Mar 2024 14:43:47 +0900</pubDate>
+      
+      <guid>https://shiro-a1.github.io/post/affiliate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C#に関する勉強　第一回</title>
+      <link>https://shiro-a1.github.io/post/20230322cs-learning1/</link>
+      <pubDate>Thu, 22 Feb 2024 14:20:50 +0900</pubDate>
+      
+      <guid>https://shiro-a1.github.io/post/20230322cs-learning1/</guid>
+      <description>会社でC#使うのでC#の勉強を少ししていました。 私は元々Qt C++がメインだったのでC++との違いを主題として書いていきます。 まあ他人向けというより自分への防備録としてですけど。
+C++との違い *Hello world! いつものやつです C++だとcout &amp;lt;&amp;lt; &amp;quot;Hello world!&amp;quot; &amp;lt;&amp;lt; endl;とかprintf(&amp;quot;Hello world!\n&amp;quot;);ですね。 これがC#だとConsole.WriteLine(&amp;ldquo;Hello world!&amp;rdquo;);になるっぽいですね。 まあでもこれ実際のプログラミングで使う機会ってそんなにあるんですかね？
+大きな変化で驚いたのは配列の宣言とヘッダーファイルが無いことですよね。 配列の宣言の[]の位置が違うので違和感がすごいですね C++だとCと同じで int array[3] = {1, 2, 3};　//とか int array[3];	//ですよね 一方C#だと int[] array = {1, 2, 3};	//あるいは int[] array = new int[3];	//です そしてヘッダーファイルに関してはC++だと.hに宣言して.cssに実装を書くってやり方でしたが　.hとかはなくその場で記述しないといけないみたいです。
+あとmain関数が謎のクラスに入ってるのもよくわからないんですよね。 サンプルとか見てても全部何かしらクラスに入ってますよね。そういうもんなんでしょうけど何故なのか分かってません。
+細かく書くと無限に増えそうなので大きな違いをすぐ思いつくのだけ書きましたが、取り敢えずここらへんです。 また思い出したり、何か出てきたら追加していきます。
+それでは。</description>
+    </item>
+    
     <item>
       <title>このホームページの作り方とか</title>
       <link>https://shiro-a1.github.io/post/hp-create/</link>

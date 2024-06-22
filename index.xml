@@ -6,44 +6,60 @@
     <description>Recent content on Shiro-aI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 22 Mar 2024 14:43:47 +0900</lastBuildDate><atom:link href="https://shiro-a1.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 18 Jun 2024 20:16:59 +0900</lastBuildDate><atom:link href="https://shiro-a1.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Html Web Server</title>
+      <link>https://shiro-a1.github.io/post/240622html-web-server/</link>
+      <pubDate>Tue, 18 Jun 2024 20:16:59 +0900</pubDate>
+      
+      <guid>https://shiro-a1.github.io/post/240622html-web-server/</guid>
+      <description>&lt;p&gt;自分用のwebサイトのサーバー構築手順&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>家にNASを立てたのでその忘備録</title>
+      <link>https://shiro-a1.github.io/post/240621nas01/</link>
+      <pubDate>Sun, 02 Jun 2024 12:22:16 +0900</pubDate>
+      
+      <guid>https://shiro-a1.github.io/post/240621nas01/</guid>
+      <description>&lt;p&gt;サブPCをlinuxにしてNASを入れたのでやり方のメモ忘備録&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>拡張機能を作ったメモ</title>
+      <link>https://shiro-a1.github.io/post/240505extensions/</link>
+      <pubDate>Sun, 05 May 2024 22:44:18 +0900</pubDate>
+      
+      <guid>https://shiro-a1.github.io/post/240505extensions/</guid>
+      <description>&lt;p&gt;chromeの拡張機能開発を少し触ったので忘備録として書きます&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>アフィカス</title>
-      <link>https://shiro-a1.github.io/post/affiliate/</link>
+      <link>https://shiro-a1.github.io/post/240403affiliate/</link>
       <pubDate>Fri, 22 Mar 2024 14:43:47 +0900</pubDate>
       
-      <guid>https://shiro-a1.github.io/post/affiliate/</guid>
+      <guid>https://shiro-a1.github.io/post/240403affiliate/</guid>
       <description>&lt;p&gt;アフィカスはクソってのはまあ皆さん思ってると思うんですけど、それはそれとしてアフィリエイトってお得なのはそうじゃないですか。&lt;br&gt;
 なのでまあ紹介というかまとめだけはしておこうというアレです。&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>C#に関する勉強　第一回</title>
-      <link>https://shiro-a1.github.io/post/20230322cs-learning1/</link>
-      <pubDate>Thu, 22 Feb 2024 14:20:50 +0900</pubDate>
-      
-      <guid>https://shiro-a1.github.io/post/20230322cs-learning1/</guid>
-      <description>&lt;p&gt;会社でC#使うのでC#の勉強を少ししていました。
-私は元々Qt C++がメインだったのでC++との違いを主題として書いていきます。
-まあ他人向けというより自分への防備録としてですけど。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>このホームページの作り方とか</title>
-      <link>https://shiro-a1.github.io/post/hp-create/</link>
+      <link>https://shiro-a1.github.io/post/240322hp-create/</link>
       <pubDate>Wed, 24 May 2023 17:26:07 +0900</pubDate>
       
-      <guid>https://shiro-a1.github.io/post/hp-create/</guid>
+      <guid>https://shiro-a1.github.io/post/240322hp-create/</guid>
       <description>&lt;p&gt;最初の記事にもちょっと書きましたがHugoを使って作成しました。&lt;br&gt;
 ちなみになんでHugoにしたのかというところから話していきます。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Webサイトを作りました！</title>
-      <link>https://shiro-a1.github.io/post/init-post/</link>
+      <link>https://shiro-a1.github.io/post/230526init-post/</link>
       <pubDate>Wed, 24 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://shiro-a1.github.io/post/init-post/</guid>
+      <guid>https://shiro-a1.github.io/post/230526init-post/</guid>
       <description>&lt;p&gt;ホームページがほしいと思ったのと色々練習したいと思って作りました。&lt;br&gt;
 今までサーバー用意するのが大変だからやってなかったのですけど、GitHub Pages使えば無料でサイトを公開できる！って知って試してみました。&lt;/p&gt;</description>
     </item>

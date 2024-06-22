@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    
+    <script type="application/ld+json">
+
+{  
+  "@context":"http://schema.org",
+  "@type":"Website",
+  "@id":"https:\/\/shiro-a1.github.io\/",
+  "author": {
+    "@type": "Person",
+    "name": "ShiroI",
+    
+    "image": "https://shiro-a1.github.io/images/Profile_Icon.jpg"
+    
+  },
+  "name":"Shiro-aI",
+  "description":"\u003cp\u003eサブPCをlinuxにしてNASを入れたのでやり方のメモ忘備録\u003c\/p\u003e",
+  "url":"https:\/\/shiro-a1.github.io\/post\/240621nas01\/",
+  "keywords":"[server, nas]"
+}
+
+</script>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.111.3 with theme Tranquilpeak 0.5.3-BETA">
+<meta name="author" content="ShiroI">
+<meta name="keywords" content="server, nas">
+<meta name="description" content="サブPCをlinuxにしてNASを入れたのでやり方のメモ忘備録">
+
+
+<meta property="og:description" content="サブPCをlinuxにしてNASを入れたのでやり方のメモ忘備録">
+<meta property="og:type" content="article">
+<meta property="og:title" content="家にNASを立てたのでその忘備録">
+<meta name="twitter:title" content="家にNASを立てたのでその忘備録">
+<meta property="og:url" content="https://shiro-a1.github.io/post/240621nas01/">
+<meta property="twitter:url" content="https://shiro-a1.github.io/post/240621nas01/">
+<meta property="og:site_name" content="Shiro-aI">
+<meta property="og:description" content="サブPCをlinuxにしてNASを入れたのでやり方のメモ忘備録">
+<meta name="twitter:description" content="サブPCをlinuxにしてNASを入れたのでやり方のメモ忘備録">
+<meta property="og:locale" content="ja">
+
+  
+    <meta property="article:published_time" content="2024-06-02T12:22:16">
+  
+  
+    <meta property="article:modified_time" content="2024-06-02T12:22:16">
+  
+  
+  
+    
+      <meta property="article:section" content="技術ブログ">
+    
+  
+  
+    
+      <meta property="article:tag" content="プログラミング">
+    
+      <meta property="article:tag" content="NAS">
+    
+      <meta property="article:tag" content="server">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+  <meta name="twitter:site" content="@Shiro_aI3">
+
+
+  <meta name="twitter:creator" content="@Shiro_aI3">
+
+
+
+
+
+
+  <meta property="og:image" content="https://shiro-a1.github.io/images/Profile_Icon.jpg">
+  <meta property="twitter:image" content="https://shiro-a1.github.io/images/Profile_Icon.jpg">
+
+
+
+
+
+
+    <title>家にNASを立てたのでその忘備録</title>
+
+    <link rel="icon" href="https://shiro-a1.github.io/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://shiro-a1.github.io/post/240621nas01/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    
+    <link rel="stylesheet" href="https://shiro-a1.github.io/css/style-h6ccsoet3mzkbb0wngshlfbaweimexgqcxj0h5hu4h82olsdzz6wmqdkajm.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://shiro-a1.github.io/" aria-label="ホームページへ">Shiro-aI</a>
+  </div>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://shiro-a1.github.io/#about" aria-label="著者についてもっと読む">
+          <img class="sidebar-profile-picture" src="https://shiro-a1.github.io/images/Profile_Icon.jpg" alt="プロフィール画像" />
+        </a>
+        <h4 class="sidebar-profile-name">ShiroI</h4>
+        
+          <h5 class="sidebar-profile-bio">狭く浅いオタク　Skill : C, Qt C++, C#, Python, HTML+CSS</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://shiro-a1.github.io/" title="Home">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-home" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">ホーム</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://shiro-a1.github.io/categories" title="Categories">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-bookmark" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">カテゴリー</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://shiro-a1.github.io/tags" title="Tags">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-tags" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">タグ</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://shiro-a1.github.io/#about" title="About">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-question" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">プロフィール</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/Shiro-a1" target="_blank" rel="noopener" title="GitHub">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-github" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://twitter.com/Shiro_aI3" target="_blank" rel="noopener" title="Twitter">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-twitter" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Twitter</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.youtube.com/channel/UC1Cb34iqpeNCc3JMj_t0pWg" target="_blank" rel="noopener" title="YouTube">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-youtube" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">YouTube</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.instagram.com/shiro.ai03/" target="_blank" rel="noopener" title="Instagram">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-instagram" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Instagram</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://marshmallow-qa.com/shiro_ai3" target="_blank" rel="noopener" title="marshmallow">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-instagram" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">marshmallow</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" id="top">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title">
+      家にNASを立てたのでその忘備録
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time datetime="2024-06-02T12:22:16&#43;09:00">
+        
+  6月 2, 2024
+
+      </time>
+    
+    
+  
+  
+    <span>カテゴリー</span>
+    
+      <a class="category-link" href="https://shiro-a1.github.io/categories/%e6%8a%80%e8%a1%93%e3%83%96%e3%83%ad%e3%82%b0">技術ブログ</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown">
+            <div class="main-content-wrap">
+              <p>サブPCをlinuxにしてNASを入れたのでやり方のメモ忘備録</p>
+<h2 id="まずwindowsをlinuxにする">まずwindowsをlinuxにする</h2>
+<p>これはそこら辺にあるサイトを参考にそのままやってます。<br>
+<a href="https://color-code.net/post-2783">https://color-code.net/post-2783</a><br>
+これの通りですね、biosが違うくらいですがまあ分かるでしょう。</p>
+<h2 id="linuxにsambaを入れる">linuxにsambaを入れる</h2>
+<h3 id="sambaを入れるまで">sambaを入れるまで</h3>
+<p>sudo vi /etc/samba/smb.conf で<br>
+[設定名]
+path = /共有したいディレクトリ
+browsable = yes
+writeable = yes
+guest of = no
+read only = no</p>
+<p>を設定します。<br>
+そして設定を反映させるために以下の2行を実行<br>
+$ sudo systemctl restart smbd<br>
+$ sudo systemctl restart nmbd</p>
+<p>これでsambaの設定は終了です。</p>
+<h2 id="接続">接続</h2>
+<h3 id="tailscaleの導入">tailscaleの導入</h3>
+<p>外部からの接続には通常はポート開放してipだので制限してとか色々と複雑なことをしないといけないのですが、<br>
+マンション住みだしセキュリティ関連も難しいのでVPNを使って接続する方法を取りました。</p>
+<p>それがtailscaleというものです。</p>
+<p>tailscaleはオープンソースのアカウント単位でVPNを引けるというサービスなのですが、
+これを使えばポート開放などが不要になります。</p>
+<p>・NASを入れたlinuxPC
+・普段使うメインPC
+・外出先でアクセスしたいスマホ</p>
+<p>等々、NASに接続したいデバイスにtailscaleのアプリを入れるだけで<br>
+tailscaleが提供するipアドレスあるいはマシンネームで接続が可能となります。<br>
+詳しい説明は今回はしません。</p>
+<p>↓以下tailscaleが入っている前提でのお話↓</p>
+<h3 id="windowsの場合">Windowsの場合</h3>
+<p>windowsならエクスプローラーで<br>
+<code>\\{tailscaleのデバイス名}\[設定名]</code><br>
+を入力することで接続できるようになります。</p>
+<h4 id="補足容量を表示する">補足：容量を表示する</h4>
+<p>この場合は接続後のディレクトリのパスをコピー<br>
+-&gt; PCを右クリック<br>
+-&gt; ネットワークドライブの割り当て<br>
+から出来ます。</p>
+<h4 id="補足hddの設定">補足：HDDの設定</h4>
+<p>そのままだと上手くHDDに接続するやり方がわからなかったので、<br>
+色々試したものの覚え書きです。<br>
+HDDをそのままだと使えないのかな？
+パーティションの作成などを行って色々と設定が必要でした。<br>
+<a href="https://www2.yukawa.kyoto-u.ac.jp/~koudai.sugimoto/dokuwiki/doku.php?id=ubuntu:%E3%82%B9%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B8%E3%81%AE%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88">https://www2.yukawa.kyoto-u.ac.jp/~koudai.sugimoto/dokuwiki/doku.php?id=ubuntu:%E3%82%B9%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B8%E3%81%AE%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88</a><br>
+基本はこのサイトを参考にしています。<br>
+ただパーティションのフォーマットの部分で
+The file dev/sdb does not exist and no size was specified.
+というエラーが出ました。<br>
+ただこれはsudo partprobe /dev/sdb　でリロードしていないというだけでした。</p>
+<h3 id="androidの場合">Androidの場合</h3>
+<p>こちらは選択肢は色々あると思いますが<br>
+私はファイルマネージャーってのを使っています。<br>
+リモートに上と同じようなパスで接続するだけですね</p>
+              
+
+
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">タグ</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://shiro-a1.github.io/tags/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/">プログラミング</a>
+
+  <a class="tag tag--primary tag--small" href="https://shiro-a1.github.io/tags/nas/">NAS</a>
+
+  <a class="tag tag--primary tag--small" href="https://shiro-a1.github.io/tags/server/">server</a>
+
+                  </div>
+                
+              
+            
+            
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://shiro-a1.github.io/post/240622html-web-server/" data-tooltip="Html Web Server" aria-label="次: Html Web Server">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">次</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://shiro-a1.github.io/post/240505extensions/" data-tooltip="拡張機能を作ったメモ" aria-label="前: 拡張機能を作ったメモ">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">前</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="この記事を共有する">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+  
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="トップに戻る">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+            
+  
+
+
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2024 ShiroI. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://shiro-a1.github.io/post/240622html-web-server/" data-tooltip="Html Web Server" aria-label="次: Html Web Server">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">次</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://shiro-a1.github.io/post/240505extensions/" data-tooltip="拡張機能を作ったメモ" aria-label="前: 拡張機能を作ったメモ">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">前</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="この記事を共有する">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+  
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="トップに戻る">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+      </div>
+      
+
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-times"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://shiro-a1.github.io/images/Profile_Icon.jpg" alt="プロフィール画像" />
+    
+    <h4 id="about-card-name">ShiroI</h4>
+    
+      <div id="about-card-bio">狭く浅いオタク　Skill : C, Qt C++, C#, Python, HTML+CSS</div>
+    
+    
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://shiro-a1.github.io/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js" integrity="sha512-z+/WWfyD5tccCukM4VvONpEtLmbAm5LDu7eKiyMQJ9m7OfPEDL7gENyDRL3Yfe8XAuGsS2fS4xSMnl6d30kqGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="https://shiro-a1.github.io/js/script-yqzy9wdlzix4lbbwdnzvwx3egsne77earqmn73v9uno8aupuph8wfguccut.min.js"></script>
+
+
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+
+
+    
+  </body>
+</html>
+
